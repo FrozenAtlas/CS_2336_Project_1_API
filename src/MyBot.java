@@ -123,36 +123,6 @@ public class MyBot extends PircBot{
             return null;
         }
         return zipcode;
-		/*String msg = message;
-		int numbers = 0;
-		int res = 0; 
-	       
-        // start going through string
-        for (int i = 0; i<msg.length(); i++){ 
-            // get consecutive numeric digits
-            if (Character.isDigit(msg.charAt(i))) {
-            	numbers = numbers * 10 + (msg.charAt(i)-'0'); 
-            }       
-            // check if int is 5 digits long, if not keep going
-            else{ 
-            	// if we have a 5 digit number then we have a zip
-                if(String.valueOf(res).length() == 5||String.valueOf(numbers).length() == 5) { 
-                	break;
-                }
-                else {
-            	res = Math.max(res, numbers);        
-                // Reset the number 
-                numbers = 0; 
-                }		
-            } 
-        } 
-        if(String.valueOf(res).length() == 5) { // if res is 5 digits return it
-        	// return zip code
-        	return res;
-        }
-        else{ // if res isn't, return numbers, it will be 5 digits
-        	return numbers;
-        }*/
 	}
 	// method to get the weather from the weather api
 	public double[] getWeather(String zIP) {
